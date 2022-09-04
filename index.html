@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generete</title>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section>
+            <div>
+                <!--titulo como o proprio nome diz-->
+                <h1 id="titulo"> Como deixar suas senhas mais fortes</h1>
+                <!--caixa para o usuario digitar sua senha comum-->
+                <div class="d-flex alingn-items-center">
+                    <input id="input" type="text" class="password-input" maxlength="20">
+                    <button id="button" onclick="generatePass()" class="password-button">GO</button>
+                </div>
+
+                <section>
+
+                    <!-- primeira checkbox para o usuario escolher-->
+                    <div class="password__content--checkbox">
+                        <input type="checkbox" id="letterToNumber">
+                        <label for="letterToNumber"><span class="never-select">Converter algumas letras para
+                                numeros</span></label>
+                    </div>
+                    <!-- segunda checkbox para o usuario escolher-->
+                    <div class="password__content--checkbox">
+                        <input type="checkbox" id="enableUpperCase">
+                        <label for="enableUpperCase"><span class="never-select"> Adicionar o UpperCase
+                                aleatoriamente</span></label>
+                    </div>
+
+                    <!--função q ira imprimir o resultado-->
+                    <div class="password__content--result">
+                        <span id="result"></span>
+                        <button id="copyButton" onclick="copyResult()">COPY</button>
+                    </div>
+
+                    <!--função copiar o resultado-->
+                    <div id="copied" class="password__content--copied">
+                        copied
+                    </div>
+
+                </section>
+            </div>
+    </main>
+
+</body>
+
+</html>
