@@ -12,47 +12,43 @@
 
 <body>
 
-    <main class="container">
 
         <section>
+
+            <!--titulo como o proprio nome diz-->
+            <h1 id="titulo"> Como deixar suas senhas mais fortes</h1>
+
             <div>
-                <!--titulo como o proprio nome diz-->
-                <h1 id="titulo"> Como deixar suas senhas mais fortes</h1>
-                <!--caixa para o usuario digitar sua senha comum-->
-                <div class="d-flex alingn-items-center">
-                    <input id="input" type="text" class="password-input" maxlength="20">
-                    <button id="button" onclick="generatePass()" class="password-button">GO</button>
-                </div>
-
-                <section>
-
-                    <!-- primeira checkbox para o usuario escolher-->
-                    <div class="password__content--checkbox">
-                        <input type="checkbox" id="letterToNumber">
-                        <label for="letterToNumber"><span class="never-select">Converter algumas letras para
-                                numeros</span></label>
-                    </div>
-                    <!-- segunda checkbox para o usuario escolher-->
-                    <div class="password__content--checkbox">
-                        <input type="checkbox" id="enableUpperCase">
-                        <label for="enableUpperCase"><span class="never-select"> Adicionar o UpperCase
-                                aleatoriamente</span></label>
-                    </div>
-
-                    <!--função q ira imprimir o resultado-->
-                    <div class="password__content--result">
-                        <span id="result"></span>
-                        <button id="copyButton" onclick="copyResult()">COPY</button>
-                    </div>
-
-                    <!--função copiar o resultado-->
-                    <div id="copied" class="password__content--copied">
-                        copied
-                    </div>
-
-                </section>
+                 <!--caixa para o usuario digitar sua senha comum-->
+                <input id="inputPasswordId" type="text" />
+                <!--Botão enviar-->
+                <button id="btnGerar">GO</button>
+                <!--Quantidade de caracteres na senha-->
+                <input id="inputLengthId" type="range" min="6" max="18">
+                <label class="texto" for="inputLengthId"></label>
             </div>
-    </main>
+
+            <!--4 Checkbox-->
+            <div>
+                <input id="chkLowerId" type="checkbox" />
+                <label for="chkLowerId" class="texto">Letras minúsculas</label>
+            </div>
+            <div>
+                <input id="chkUpperId" type="checkbox" />
+                <label for="chkUpperId" class="texto">Letras maiúsculas</label>
+            </div>
+            <div>
+                <input id="chkNumberId" type="checkbox" />
+                <label for="chkNumberId" class="texto">Números</label>
+            </div>
+            <div>
+                <input id="chkSymbolsId" type="checkbox" />
+                <label for="chkSymbolsId" class="texto">Símbolos</label>
+            </div>
+
+        </section>
+
+        <script src="script.js"></script>
 
 </body>
 
