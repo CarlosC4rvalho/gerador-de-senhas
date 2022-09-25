@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
-body{
-    font-family: 'Amatic SC',sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', sans-serif;
     background-color: black;
+    font-size: x-large;
+
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
     height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: hidden;
 }
 
 #titulo {
@@ -18,82 +24,59 @@ body{
     font-weight: bold;
 }
 
-#input {
-    padding: 8px;
-    font-size: 20px;
-    width: 100%;
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    padding: 5px;
+    outline: none;
     background-color: white;
+    accent-color: rgb(242, 0, 117);
     border: none;
-    font-family: sans-serif;
-    color: rgb(99, 98, 98);
+    border-radius: 6px;
 }
 
-#button {
-    background-color: rgb(240, 26, 97);
-    padding: 8px;
-    border-radius: 5px;
-    width: 25%;
-    font-size: 25px;
-    font-weight: bold;
+input[type=checkbox] {
+    width: 18px;
+    height: 18px;
     color: white;
-    transition: .2s ease;
-    border: none;
 }
 
-#button:hover {
+input[type=range] {
+    width: 60%;
+}
+
+.texto {
+    color: white;
+    font-size: 18px;
+}
+
+button {
+    background-color: rgb(242, 0, 117);
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 8px;
+    width: 15%;
+}
+
+button:hover {
     transition: .2s ease;
     opacity: 0.6;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
 #copied {
     background-color: white;
     font-size: 2rem;
@@ -110,3 +93,4 @@ body{
         opacity: 1;
     }
 }
+*/
